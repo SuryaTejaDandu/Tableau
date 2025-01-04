@@ -1,0 +1,1970 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Region Parameter' datatype='string' name='[Region Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Albany&quot;'>
+        <calculation class='tableau' formula='&quot;Albany&quot;' />
+        <members>
+          <member value='&quot;Albany&quot;' />
+          <member value='&quot;Atlanta&quot;' />
+          <member value='&quot;BaltimoreWashington&quot;' />
+          <member value='&quot;Boise&quot;' />
+          <member value='&quot;Boston&quot;' />
+          <member value='&quot;BuffaloRochester&quot;' />
+          <member value='&quot;California&quot;' />
+          <member value='&quot;Charlotte&quot;' />
+          <member value='&quot;Chicago&quot;' />
+          <member value='&quot;CincinnatiDayton&quot;' />
+          <member value='&quot;Columbus&quot;' />
+          <member value='&quot;DallasFtWorth&quot;' />
+          <member value='&quot;Denver&quot;' />
+          <member value='&quot;Detroit&quot;' />
+          <member value='&quot;GrandRapids&quot;' />
+          <member value='&quot;GreatLakes&quot;' />
+          <member value='&quot;HarrisburgScranton&quot;' />
+          <member value='&quot;HartfordSpringfield&quot;' />
+          <member value='&quot;Houston&quot;' />
+          <member value='&quot;Indianapolis&quot;' />
+          <member value='&quot;Jacksonville&quot;' />
+          <member value='&quot;LasVegas&quot;' />
+          <member value='&quot;LosAngeles&quot;' />
+          <member value='&quot;Louisville&quot;' />
+          <member value='&quot;MiamiFtLauderdale&quot;' />
+          <member value='&quot;Midsouth&quot;' />
+          <member value='&quot;Nashville&quot;' />
+          <member value='&quot;NewOrleansMobile&quot;' />
+          <member value='&quot;NewYork&quot;' />
+          <member value='&quot;Northeast&quot;' />
+          <member value='&quot;NorthernNewEngland&quot;' />
+          <member value='&quot;Orlando&quot;' />
+          <member value='&quot;Philadelphia&quot;' />
+          <member value='&quot;PhoenixTucson&quot;' />
+          <member value='&quot;Pittsburgh&quot;' />
+          <member value='&quot;Plains&quot;' />
+          <member value='&quot;Portland&quot;' />
+          <member value='&quot;RaleighGreensboro&quot;' />
+          <member value='&quot;RichmondNorfolk&quot;' />
+          <member value='&quot;Roanoke&quot;' />
+          <member value='&quot;Sacramento&quot;' />
+          <member value='&quot;SanDiego&quot;' />
+          <member value='&quot;SanFrancisco&quot;' />
+          <member value='&quot;Seattle&quot;' />
+          <member value='&quot;SouthCarolina&quot;' />
+          <member value='&quot;SouthCentral&quot;' />
+          <member value='&quot;Southeast&quot;' />
+          <member value='&quot;Spokane&quot;' />
+          <member value='&quot;StLouis&quot;' />
+          <member value='&quot;Syracuse&quot;' />
+          <member value='&quot;Tampa&quot;' />
+          <member value='&quot;TotalUS&quot;' />
+          <member value='&quot;West&quot;' />
+          <member value='&quot;WestTexNewMexico&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='avocado' inline='true' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='avocado' name='textscan.1exxph70iwq5h919o3ex618vv2sq'>
+            <connection class='textscan' directory='Data/Dataset from kaggle' filename='avocado.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1exxph70iwq5h919o3ex618vv2sq' name='avocado.csv' table='[avocado#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='real' name='AveragePrice' ordinal='2' />
+            <column datatype='real' name='Total Volume' ordinal='3' />
+            <column datatype='real' name='4046' ordinal='4' />
+            <column datatype='real' name='4225' ordinal='5' />
+            <column datatype='real' name='4770' ordinal='6' />
+            <column datatype='real' name='Total Bags' ordinal='7' />
+            <column datatype='real' name='Small Bags' ordinal='8' />
+            <column datatype='real' name='Large Bags' ordinal='9' />
+            <column datatype='real' name='XLarge Bags' ordinal='10' />
+            <column datatype='string' name='type' ordinal='11' />
+            <column datatype='integer' name='year' ordinal='12' />
+            <column datatype='string' name='region' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1exxph70iwq5h919o3ex618vv2sq' name='avocado.csv' table='[avocado#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='real' name='AveragePrice' ordinal='2' />
+            <column datatype='real' name='Total Volume' ordinal='3' />
+            <column datatype='real' name='4046' ordinal='4' />
+            <column datatype='real' name='4225' ordinal='5' />
+            <column datatype='real' name='4770' ordinal='6' />
+            <column datatype='real' name='Total Bags' ordinal='7' />
+            <column datatype='real' name='Small Bags' ordinal='8' />
+            <column datatype='real' name='Large Bags' ordinal='9' />
+            <column datatype='real' name='XLarge Bags' ordinal='10' />
+            <column datatype='string' name='type' ordinal='11' />
+            <column datatype='integer' name='year' ordinal='12' />
+            <column datatype='string' name='region' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AveragePrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AveragePrice]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>AveragePrice</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Volume]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>Total Volume</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4046</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[4046]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>4046</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4225</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[4225]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>4225</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4770</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[4770]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>4770</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Bags</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Bags]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>Total Bags</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Small Bags</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Small Bags]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>Small Bags</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Large Bags</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Large Bags]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>Large Bags</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XLarge Bags</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[XLarge Bags]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>XLarge Bags</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[avocado.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[avocado.csv_80448C6F0DD544B3AA205643B89D844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+      <column caption='Min Price' datatype='real' name='[Calculation_396035314235355136]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN([AveragePrice])' />
+      </column>
+      <column caption='Max Price' datatype='real' name='[Calculation_396035314237829121]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([AveragePrice])' />
+      </column>
+      <column caption='Medain Price' datatype='real' name='[Calculation_396035314237939714]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MEDIAN([AveragePrice])' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Large Bags]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Small Bags]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Total Bags]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Total Volume]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='avocado.csv' datatype='table' name='[__tableau_internal_object_id__].[avocado.csv_80448C6F0DD544B3AA205643B89D844C]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[region]' derivation='Max' name='[max:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[AveragePrice]' derivation='Sum' name='[sum:AveragePrice:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Large Bags]' derivation='Sum' name='[sum:Large Bags:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Small Bags]' derivation='Sum' name='[sum:Small Bags:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Bags]' derivation='Sum' name='[sum:Total Bags:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Volume]' derivation='Sum' name='[sum:Total Volume:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_396035314237939714]' derivation='User' name='[usr:Calculation_396035314237939714:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (MONTH(Date),Region)' hidden='true' name='[Action (MONTH(Date),Region)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+          <groupfilter function='level-members' level='[region]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date),Region,Type)' hidden='true' name='[Action (MONTH(Date),Region,Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Date:ok]' />
+          <groupfilter function='level-members' level='[region]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Region,Type)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:region:nk]' />
+          <groupfilter function='level-members' level='[none:type:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[max:region:nk]' palette='red_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;StLouis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jacksonville&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MiamiFtLauderdale&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SouthCarolina&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DallasFtWorth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Roanoke&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CincinnatiDayton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RichmondNorfolk&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Syracuse&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Boise&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Midsouth&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SouthCentral&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Plains&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LasVegas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SanDiego&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;HartfordSpringfield&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;SanFrancisco&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;HarrisburgScranton&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Boston&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Southeast&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PhoenixTucson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;WestTexNewMexico&quot;</bucket>
+            </map>
+            <map to='#c21b3b'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;GrandRapids&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#d52b3d'>
+              <bucket>&quot;RaleighGreensboro&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Indianapolis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NorthernNewEngland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tampa&quot;</bucket>
+            </map>
+            <map to='#e33e43'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#ee554b'>
+              <bucket>&quot;Northeast&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BuffaloRochester&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;NewOrleansMobile&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Spokane&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LosAngeles&quot;</bucket>
+            </map>
+            <map to='#f46c59'>
+              <bucket>&quot;NewYork&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Detroit&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GreatLakes&quot;</bucket>
+            </map>
+            <map to='#fb9782'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#fdaa9a'>
+              <bucket>&quot;Charlotte&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Columbus&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Orlando&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TotalUS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BaltimoreWashington&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Louisville&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Albany&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Bags:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[usr:Calculation_396035314237939714:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:AveragePrice:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Small Bags:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;conventional&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;organic&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[qr:Date:ok]' palette='green_gold_10_0' type='palette'>
+            <map to='#146c36'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#439350'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#8eb858'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#146c36'>
+              <bucket>&quot;SanFrancisco&quot;</bucket>
+            </map>
+            <map to='#146c36'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#146c36'>
+              <bucket>&quot;WestTexNewMexico&quot;</bucket>
+            </map>
+            <map to='#176e38'>
+              <bucket>&quot;Tampa&quot;</bucket>
+            </map>
+            <map to='#1b703a'>
+              <bucket>&quot;Syracuse&quot;</bucket>
+            </map>
+            <map to='#1f733c'>
+              <bucket>&quot;StLouis&quot;</bucket>
+            </map>
+            <map to='#22753e'>
+              <bucket>&quot;Spokane&quot;</bucket>
+            </map>
+            <map to='#267840'>
+              <bucket>&quot;SouthCarolina&quot;</bucket>
+            </map>
+            <map to='#297a43'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#2f7f47'>
+              <bucket>&quot;SanDiego&quot;</bucket>
+            </map>
+            <map to='#35854a'>
+              <bucket>&quot;Roanoke&quot;</bucket>
+            </map>
+            <map to='#35854b'>
+              <bucket>&quot;RaleighGreensboro&quot;</bucket>
+            </map>
+            <map to='#37874b'>
+              <bucket>&quot;RichmondNorfolk&quot;</bucket>
+            </map>
+            <map to='#39894c'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#39894c'>
+              <bucket>&quot;Southeast&quot;</bucket>
+            </map>
+            <map to='#3c8c4e'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#3f8f4f'>
+              <bucket>&quot;Plains&quot;</bucket>
+            </map>
+            <map to='#429250'>
+              <bucket>&quot;Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#449550'>
+              <bucket>&quot;PhoenixTucson&quot;</bucket>
+            </map>
+            <map to='#499a52'>
+              <bucket>&quot;Orlando&quot;</bucket>
+            </map>
+            <map to='#529f54'>
+              <bucket>&quot;NewOrleansMobile&quot;</bucket>
+            </map>
+            <map to='#56a154'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#5ba355'>
+              <bucket>&quot;MiamiFtLauderdale&quot;</bucket>
+            </map>
+            <map to='#60a656'>
+              <bucket>&quot;Louisville&quot;</bucket>
+            </map>
+            <map to='#60a656'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#60a656'>
+              <bucket>&quot;SouthCentral&quot;</bucket>
+            </map>
+            <map to='#66a856'>
+              <bucket>&quot;LosAngeles&quot;</bucket>
+            </map>
+            <map to='#6cab56'>
+              <bucket>&quot;LasVegas&quot;</bucket>
+            </map>
+            <map to='#72ad56'>
+              <bucket>&quot;Jacksonville&quot;</bucket>
+            </map>
+            <map to='#78b056'>
+              <bucket>&quot;Indianapolis&quot;</bucket>
+            </map>
+            <map to='#7eb257'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#8ab658'>
+              <bucket>&quot;HarrisburgScranton&quot;</bucket>
+            </map>
+            <map to='#90b858'>
+              <bucket>&quot;GreatLakes&quot;</bucket>
+            </map>
+            <map to='#96ba58'>
+              <bucket>&quot;GrandRapids&quot;</bucket>
+            </map>
+            <map to='#9dbc59'>
+              <bucket>&quot;Detroit&quot;</bucket>
+            </map>
+            <map to='#a3be5a'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#a7bf5a'>
+              <bucket>&quot;NewYork&quot;</bucket>
+            </map>
+            <map to='#a7bf5a'>
+              <bucket>&quot;Northeast&quot;</bucket>
+            </map>
+            <map to='#aabf5a'>
+              <bucket>&quot;DallasFtWorth&quot;</bucket>
+            </map>
+            <map to='#afc15b'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#b0c15b'>
+              <bucket>&quot;Columbus&quot;</bucket>
+            </map>
+            <map to='#b7c35c'>
+              <bucket>&quot;CincinnatiDayton&quot;</bucket>
+            </map>
+            <map to='#cbc75e'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#d1c95f'>
+              <bucket>&quot;Charlotte&quot;</bucket>
+            </map>
+            <map to='#d2c95f'>
+              <bucket>&quot;BuffaloRochester&quot;</bucket>
+            </map>
+            <map to='#d9ca60'>
+              <bucket>&quot;Boston&quot;</bucket>
+            </map>
+            <map to='#dfcc62'>
+              <bucket>&quot;Boise&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NorthernNewEngland&quot;</bucket>
+            </map>
+            <map to='#e6cd63'>
+              <bucket>&quot;BaltimoreWashington&quot;</bucket>
+            </map>
+            <map to='#edcf64'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Albany&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;HartfordSpringfield&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Midsouth&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TotalUS&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='AveragePrice' />
+        <field-sort-custom-order field='Calculation_396035314238922757' />
+        <field-sort-custom-order field='Calculation_396035314238042115' />
+        <field-sort-custom-order field='Calculation_396035314237939714' />
+        <field-sort-custom-order field='Calculation_396035314237829121' />
+        <field-sort-custom-order field='Calculation_396035314235355136' />
+        <field-sort-custom-order field='Total Volume' />
+        <field-sort-custom-order field='4046' />
+        <field-sort-custom-order field='4225' />
+        <field-sort-custom-order field='4770' />
+        <field-sort-custom-order field='Total Bags' />
+        <field-sort-custom-order field='Small Bags' />
+        <field-sort-custom-order field='Large Bags' />
+        <field-sort-custom-order field='XLarge Bags' />
+        <field-sort-custom-order field='type' />
+        <field-sort-custom-order field='year' />
+        <field-sort-custom-order field='region' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='avocado.csv' id='avocado.csv_80448C6F0DD544B3AA205643B89D844C'>
+            <properties context=''>
+              <relation connection='textscan.1exxph70iwq5h919o3ex618vv2sq' name='avocado.csv' table='[avocado#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='real' name='AveragePrice' ordinal='2' />
+                  <column datatype='real' name='Total Volume' ordinal='3' />
+                  <column datatype='real' name='4046' ordinal='4' />
+                  <column datatype='real' name='4225' ordinal='5' />
+                  <column datatype='real' name='4770' ordinal='6' />
+                  <column datatype='real' name='Total Bags' ordinal='7' />
+                  <column datatype='real' name='Small Bags' ordinal='8' />
+                  <column datatype='real' name='Large Bags' ordinal='9' />
+                  <column datatype='real' name='XLarge Bags' ordinal='10' />
+                  <column datatype='string' name='type' ordinal='11' />
+                  <column datatype='integer' name='year' ordinal='12' />
+                  <column datatype='string' name='region' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1.TypeVSPrice(Bar)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]</rows>
+        <cols>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk]</cols>
+      </table>
+      <simple-id uuid='{A708A9F8-CA5F-4C2C-BCB2-657C7093BADD}' />
+    </worksheet>
+    <worksheet name='2.Price/Region(BAR)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[Exclusions (Region,Type)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:region:nk]' />
+                <groupfilter function='level-members' level='[none:type:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:type:nk]' member='&quot;conventional&quot;' />
+                    <groupfilter function='member' level='[none:type:nk]' member='&quot;organic&quot;' />
+                  </groupfilter>
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Albany&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Atlanta&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;BaltimoreWashington&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Boise&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Boston&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;BuffaloRochester&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;California&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Charlotte&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Chicago&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;CincinnatiDayton&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Columbus&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;DallasFtWorth&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Denver&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Detroit&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;GrandRapids&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;GreatLakes&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;HarrisburgScranton&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;HartfordSpringfield&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Houston&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Indianapolis&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Jacksonville&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;LasVegas&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;LosAngeles&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Louisville&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;MiamiFtLauderdale&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Nashville&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;NewOrleansMobile&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;NewYork&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;NorthernNewEngland&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Orlando&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Philadelphia&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;PhoenixTucson&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Pittsburgh&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Plains&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Portland&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;RaleighGreensboro&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;RichmondNorfolk&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Roanoke&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Sacramento&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;SanDiego&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;SanFrancisco&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Seattle&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;SouthCarolina&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Spokane&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;StLouis&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Syracuse&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;Tampa&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;TotalUS&quot;' />
+                    <groupfilter function='member' level='[none:region:nk]' member='&quot;WestTexNewMexico&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:region:nk]' />
+                  <hierarchy name='[none:type:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[Exclusions (Region,Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='background-color' id='refline2' value='#ffffff81' />
+            <format attr='stroke-color' id='refline2' value='#e157594b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='quantiles' id='refline0' label-type='none' scope='per-table' symmetric='true' tile-count='4' value-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' enable-instant-analytics='true' formula='median' id='refline1' label-type='automatic' probability='95' scope='per-table' value-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-table' value-column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' z-order='3' />
+          </pane>
+        </panes>
+        <rows>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]</rows>
+        <cols>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{6F5179FD-A497-4169-9877-43674C3F576E}' />
+    </worksheet>
+    <worksheet name='3.AVG,Type/Year(LineGraph)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([AveragePrice])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:region:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:year:qk]' field-type='quantitative' max='2019' min='2014' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='45' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk] * [federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk])</rows>
+        <cols>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{493E38E9-C572-4A10-A9DF-76701969DD8B}' />
+    </worksheet>
+    <worksheet name='4.Monthly AVGPrice/Region(Heat-Table)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[Action (MONTH(Date),Region,Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_848DDAC996F1461781B0088780EA212F]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tmn:Date:ok]' />
+              <groupfilter function='level-members' level='[region]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Albany&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Atlanta&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;BaltimoreWashington&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Boise&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Boston&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;BuffaloRochester&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Charlotte&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Chicago&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;CincinnatiDayton&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Columbus&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;DallasFtWorth&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Denver&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Detroit&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;GrandRapids&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;GreatLakes&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;HarrisburgScranton&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;HartfordSpringfield&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Houston&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Indianapolis&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Jacksonville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;LasVegas&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;LosAngeles&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Louisville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;MiamiFtLauderdale&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Nashville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;NewOrleansMobile&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;NewYork&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Orlando&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Philadelphia&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;PhoenixTucson&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Pittsburgh&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Plains&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Portland&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;RaleighGreensboro&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;RichmondNorfolk&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Roanoke&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Sacramento&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SanDiego&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SanFrancisco&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Seattle&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SouthCarolina&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Spokane&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;StLouis&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Syracuse&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Tampa&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;WestTexNewMexico&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk]'>
+            <groupfilter function='level-members' level='[none:type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk]</column>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</column>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[Action (MONTH(Date),Region,Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' palette='red_green_white_diverging_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' />
+              <text column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</rows>
+        <cols>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{5529A856-3D6E-4CE8-8BBE-8A25911D7A4A}' />
+    </worksheet>
+    <worksheet name='5.Volume/Region(Tree Map)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column datatype='real' name='[Total Volume]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[Total Volume]' derivation='Sum' name='[sum:Total Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Albany&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Atlanta&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;BaltimoreWashington&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Boise&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Boston&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;BuffaloRochester&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Charlotte&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Chicago&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;CincinnatiDayton&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Columbus&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;DallasFtWorth&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Denver&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Detroit&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;GrandRapids&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;GreatLakes&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;HarrisburgScranton&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;HartfordSpringfield&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Houston&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Indianapolis&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Jacksonville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;LasVegas&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;LosAngeles&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Louisville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;MiamiFtLauderdale&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Nashville&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;NewOrleansMobile&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;NewYork&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Orlando&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Philadelphia&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;PhoenixTucson&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Pittsburgh&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Plains&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Portland&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;RaleighGreensboro&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;RichmondNorfolk&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Roanoke&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Sacramento&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SanDiego&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SanFrancisco&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Seattle&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;SouthCarolina&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Spokane&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;StLouis&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Syracuse&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;Tampa&quot;' />
+              <groupfilter function='member' level='[none:region:nk]' member='&quot;WestTexNewMexico&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='boxplot-style' id='refline0' value='modern' />
+            <format attr='whisker-stroke-size' id='refline0' value='1' />
+            <format attr='whisker-stroke-color' id='refline0' value='#333333' />
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_yellow' />
+            <format attr='opacity' id='refline0' value='255' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]' />
+              <size column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]' />
+              <text column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</field>
+                  <field>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;WestTexNewMexico&quot;</value>
+                <value>144521839.78</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{6D893E05-78E3-415D-85CA-067620A0B1A9}' />
+    </worksheet>
+    <worksheet name='6. Type, QuaterlyVSPrice(Bar graph)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column caption='Medain Price' datatype='real' name='[Calculation_396035314237939714]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MEDIAN([AveragePrice])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AveragePrice]' derivation='Sum' name='[sum:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_396035314237939714]' derivation='User' name='[usr:Calculation_396035314237939714:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[qr:Date:ok]' />
+              <text column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[usr:Calculation_396035314237939714:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:AveragePrice:qk]</rows>
+        <cols>([federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk] / [federated.1rxzlm01n8eokc17h3iku1k5nu0o].[qr:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{DA1F231F-63C5-4F7A-B4CF-A37700A7B946}' />
+    </worksheet>
+    <worksheet name='7.PriceElasticity(BubblePLot)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column datatype='real' name='[4046]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Large Bags]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[Large Bags]' derivation='Sum' name='[sum:Large Bags:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([4046])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Albany&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Atlanta&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;BaltimoreWashington&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Boise&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Boston&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;BuffaloRochester&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;California&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Charlotte&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Chicago&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;CincinnatiDayton&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Columbus&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;DallasFtWorth&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Denver&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Detroit&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;GrandRapids&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;GreatLakes&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;HarrisburgScranton&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;HartfordSpringfield&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Houston&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Indianapolis&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Jacksonville&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;LasVegas&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;LosAngeles&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Louisville&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;MiamiFtLauderdale&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Nashville&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;NewOrleansMobile&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;NewYork&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Orlando&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Philadelphia&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;PhoenixTucson&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Pittsburgh&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Plains&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Portland&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;RaleighGreensboro&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;RichmondNorfolk&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Roanoke&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Sacramento&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;SanDiego&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;SanFrancisco&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Seattle&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;SouthCarolina&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Spokane&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;StLouis&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Syracuse&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;Tampa&quot;' />
+                  <groupfilter function='member' level='[none:region:nk]' member='&quot;WestTexNewMexico&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]' />
+              <size column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]' />
+              <text column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' />
+              <text column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5B5CE848-0219-405E-945D-0DFE02D0CFCA}' />
+    </worksheet>
+    <worksheet name='8.Time Series(Forecasting)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='avocado' name='federated.1rxzlm01n8eokc17h3iku1k5nu0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rxzlm01n8eokc17h3iku1k5nu0o'>
+            <column caption='Average Price' datatype='real' name='[AveragePrice]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Forecast Indicator]' derivation='Attribute' forecast-column-base='[none:Forecast Indicator:nk]' forecast-column-type='forecast-indicator' name='[attr:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AveragePrice]' derivation='Avg' name='[avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AveragePrice]' derivation='Avg' forecast-column-base='[avg:AveragePrice:qk]' forecast-column-type='forecast-value' name='[fVal:avg:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AveragePrice]' derivation='Sum' forecast-column-base='[sum:AveragePrice:qk]' forecast-column-type='forecast-value' name='[fVal:sum:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AveragePrice]' derivation='Sum' name='[sum:AveragePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[fVal:sum:AveragePrice:qk]' palette='green_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[fVal:avg:AveragePrice:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[fVal:avg:AveragePrice:qk]' />
+              <lod column='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[attr:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[fVal:sum:AveragePrice:qk]</rows>
+        <cols>[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[tmn:Date:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='2' range-type='end-of' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{16F3B2B5-EF42-4A67-833C-D08D0DBCB4F3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Abstract'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='' h='72000' id='9' param='https://hassavocadoboard.com' type-v2='web' w='99400' x='0' y='33000' />
+        <zone h='32125' id='16' is-centered='0' is-scaled='1' param='Image/784668af-0596-49f1-9631-07837ab41014.jpg' type-v2='bitmap' w='25900' x='73800' y='625' />
+        <zone h='7250' id='31' is-centered='0' is-scaled='1' param='Image/text-1734065624451.png' type-v2='bitmap' w='25900' x='22400' y='4625' />
+        <zone h='15500' id='32' is-centered='0' is-scaled='1' param='Image/text-1734065671810.png' type-v2='bitmap' w='38200' x='16400' y='9625' />
+        <zone forceUpdate='true' h='3750' id='34' type-v2='text' w='17700' x='34300' y='22875'>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Arial' fontsize='12'>Team 11: Yajush, Surya</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3750' id='35' type-v2='text' w='12200' x='20400' y='22875'>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Arial' fontsize='12'>Prof. Chrisy Yao</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4250' id='36' type-v2='text' w='48800' x='13000' y='26000'>
+          <formatted-text>
+            <run fontcolor='#000000'>ISOM 845 1 Business Intelligence, Data Visualization, and Storytelling - Fall 2024</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='66' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='65' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='257' h='32125' id='16' is-centered='0' is-fixed='true' is-scaled='1' param='Image/784668af-0596-49f1-9631-07837ab41014.jpg' type-v2='bitmap' w='25900' x='73800' y='625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='58' h='7250' id='31' is-centered='0' is-fixed='true' is-scaled='1' param='Image/text-1734065624451.png' type-v2='bitmap' w='25900' x='22400' y='4625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='15500' id='32' is-centered='0' is-fixed='true' is-scaled='1' param='Image/text-1734065671810.png' type-v2='bitmap' w='38200' x='16400' y='9625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3750' id='35' type-v2='text' w='12200' x='20400' y='22875'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Arial' fontsize='12'>Prof. Chrisy Yao</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3750' id='34' type-v2='text' w='17700' x='34300' y='22875'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Arial' fontsize='12'>Team 11: Yajush, Surya</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4250' id='36' type-v2='text' w='48800' x='13000' y='26000'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>ISOM 845 1 Business Intelligence, Data Visualization, and Storytelling - Fall 2024</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='' h='72000' id='9' is-fixed='true' param='https://hassavocadoboard.com' type-v2='web' w='99400' x='0' y='33000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5D53BE50-C55D-407B-8105-30DCA54777BD}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='END CARD'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='15000' id='3' type-v2='text' w='67900' x='14100' y='11000'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#59a14f' fontsize='15'>You’ve come to the end of the story,  The Avocado shows its adaptability and innovation. Its more than just a fruit — it represents what can be achieved through collaboration, creativity, and dedication.</run>
+          </formatted-text>
+        </zone>
+        <zone h='9250' id='5' type-v2='text' w='11300' x='41700' y='4750'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#d3b348' fontsize='18'>THE END</run>
+          </formatted-text>
+        </zone>
+        <zone h='64750' id='6' is-centered='0' is-scaled='1' param='Image/Gemini_Generated_Image_mba8cvmba8cvmba8.jpeg' type-v2='bitmap' w='51400' x='23300' y='25875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9250' id='5' type-v2='text' w='11300' x='41700' y='4750'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#d3b348' fontsize='18'>THE END</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='15000' id='3' type-v2='text' w='67900' x='14100' y='11000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#59a14f' fontsize='15'>You’ve come to the end of the story,  The Avocado shows its adaptability and innovation. Its more than just a fruit — it represents what can be achieved through collaboration, creativity, and dedication.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='64750' id='6' is-centered='0' is-fixed='true' is-scaled='1' param='Image/Gemini_Generated_Image_mba8cvmba8cvmba8.jpeg' type-v2='bitmap' w='51400' x='23300' y='25875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3D03B61F-7191-4286-85A4-52C0F6D62254}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Arial'>The Tale of Avocado</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='2801' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone fixed-size='112' h='11618' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='3631' />
+            <zone h='83921' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15249'>
+              <flipboard active-id='9' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Abstract' captured-sheet='Abstract' id='9' />
+                  <story-point caption='Chapter- 1&#10;Type VS Price&#10;(BarGraph)' captured-sheet='1.TypeVSPrice(Bar)' id='11' />
+                  <story-point caption='Chapter-2&#10;Price/Region&#10;(BarGraph)' captured-sheet='2.Price/Region(BAR)' id='12' />
+                  <story-point caption='Chapter-3&#10;AVG,Type/Year&#10;(LineGraph)' captured-sheet='3.AVG,Type/Year(LineGraph)' id='1' />
+                  <story-point caption='Chapter- 4&#10;Monthly AVGPrice/Region(Heat-Table)' captured-sheet='4.Monthly AVGPrice/Region(Heat-Table)' id='2' />
+                  <story-point caption='Chapter- 5&#10;Volume/Region&#10;(Tree Map)' captured-sheet='5.Volume/Region(Tree Map)' id='3' />
+                  <story-point caption='Chapter- 6&#10;Type, QuaterlyVSPrice&#10;(Bar graph)' captured-sheet='6. Type, QuaterlyVSPrice(Bar graph)' id='4' />
+                  <story-point caption='Chapter-7&#10;PriceElasticity&#10;(BubblePLot)' captured-sheet='7.PriceElasticity(BubblePLot)' id='7' />
+                  <story-point caption='Chapter- 8. &#10;Time Series  (Forcasting)' captured-sheet='8.Time Series(Forecasting)' id='8' />
+                  <story-point caption='END CARD' captured-sheet='END CARD' id='13' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{ADF1170C-342D-481D-9474-075DB4CCFB68}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A65AF9A1-70ED-40C8-873B-87B9AB6A5C9F}' />
+    </window>
+    <window class='dashboard' name='Abstract'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{12C4DA62-C028-4E21-BD5B-DE5680C7B702}' />
+    </window>
+    <window class='worksheet' name='1.TypeVSPrice(Bar)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{407C01B6-8BF5-4765-9577-F4B0C1D7E2D5}' />
+    </window>
+    <window class='worksheet' name='2.Price/Region(BAR)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D3AE221-698E-4B68-881D-645BAF379ED1}' />
+    </window>
+    <window class='worksheet' name='3.AVG,Type/Year(LineGraph)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Region Parameter]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC8AD898-8CD2-439C-B17B-D4F75572DEED}' />
+    </window>
+    <window class='worksheet' name='4.Monthly AVGPrice/Region(Heat-Table)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[avg:AveragePrice:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B58659B-94FA-4E42-959E-8409D7FC6B9B}' />
+    </window>
+    <window class='worksheet' name='5.Volume/Region(Tree Map)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Total Volume:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E2B555BD-215C-4A1C-A07A-5D526D0AB550}' />
+    </window>
+    <window class='worksheet' name='6. Type, QuaterlyVSPrice(Bar graph)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[qr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EF68032-2AFF-49A1-9AD7-A607E4D84904}' />
+    </window>
+    <window class='worksheet' name='7.PriceElasticity(BubblePLot)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[sum:Large Bags:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B46784E6-F1A2-44D1-8A7C-13379D3200DF}' />
+    </window>
+    <window class='worksheet' name='8.Time Series(Forecasting)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.1rxzlm01n8eokc17h3iku1k5nu0o].[fVal:avg:AveragePrice:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5436FCF0-4867-4AA6-A333-4497B66B2531}' />
+    </window>
+    <window class='dashboard' name='END CARD'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{F8B553E9-6C0B-4F1E-B530-EF9430E4B37B}' />
+    </window>
+  </windows>
+</workbook>
